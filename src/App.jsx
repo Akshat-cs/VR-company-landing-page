@@ -6,19 +6,22 @@ import Workflow from "./components/Workflow";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <div className="max-w-7xl mx-auto pt-20 px-6">
-        <HeroSection />
-        <FeatureSection />
-        <Workflow />
-        <Pricing />
-        <Testimonials />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Navbar />
+        <div className="max-w-7xl mx-auto pt-20 px-6">
+          <HeroSection />
+          <FeatureSection />
+          <Workflow />
+          <Pricing />
+          <Testimonials />
+          <Footer />
+        </div>
+      </BrowserRouter>
     </>
   );
 };
