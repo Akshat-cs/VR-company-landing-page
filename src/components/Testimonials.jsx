@@ -3,6 +3,11 @@ import { testimonials } from "../constants";
 const Testimonials = () => {
   return (
     <div id="testimonials" className="mt-20 tracking-wide">
+      <div className="text-center">
+        <span className="bg-neutral-900 text-orange-500  rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
+          testimonials
+        </span>
+      </div>
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20">
         What people are saying
       </h2>

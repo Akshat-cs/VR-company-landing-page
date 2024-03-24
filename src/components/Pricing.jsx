@@ -3,9 +3,14 @@ import { pricingOptions } from "../constants";
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
-        Pricing
+    <div id="pricing" className="mt-20 ">
+      <div className="text-center">
+        <span className="bg-neutral-900 text-orange-500  rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
+          pricing
+        </span>
+      </div>
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 tracking-wider">
+        Find a plan
       </h2>
       <div className="flex flex-wrap">
         {pricingOptions.map((option, index) => (
